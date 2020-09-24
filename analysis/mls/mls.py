@@ -39,6 +39,9 @@ pretty_print(df["base_salary"].max(), heading="### Maximum Salary ###")
 # Find details of footballer with maximum salary
 pretty_print(df.iloc[df["base_salary"].argmax()], heading="### Footballer with Maximum Salary ###")
 # or
+pretty_print(df.iloc[[df["base_salary"].argmax()]],
+             heading="### Footballer with Maximum Salary (Attention! Check difference with previous approach.) ###")
+# or
 pretty_print(df[df["base_salary"] == df["base_salary"].max()], heading="### Footballer with Maximum Salary ###")
 
 # Find last name of footballer with highest compensation
