@@ -11,7 +11,7 @@ pretty_print(df)
 
 pretty_print(df.dropna())  # Since it is dropping according to axis and default value = 0 (x), it will drop all columns
 pretty_print(df.dropna(axis=1))  # Since axis value = 1 (y), only Column2 and Column3 are dropped.
-pretty_print(df.dropna(thresh=2))  # If there are at least 2 not a number value, do not remove this index
+pretty_print(df.dropna(thresh=2))  # If there are at least 2 available data, do not remove this index
 
 pretty_print(df.fillna(value=1))
 pretty_print(df.sum())
@@ -21,8 +21,8 @@ pretty_print(df.fillna(value=df.sum().sum()))
 
 pretty_print(df.size)                   # size of Dataframe
 pretty_print(df.isnull())               # show as True/False
-pretty_print(df.isnull().sum())         # column-based count of not a numbers
-pretty_print(df.isnull().sum().sum())   # matrix-based count of not a numbers
+pretty_print(df.isnull().sum())         # column-based count of not available data
+pretty_print(df.isnull().sum().sum())   # matrix-based count of not available data
 
 
 """

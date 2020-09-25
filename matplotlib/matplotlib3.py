@@ -16,7 +16,7 @@ axes.plot(x, x ** 2,
           color="red",               # setting line color
           linewidth=3,               # setting line thickness
           linestyle="-.",            # setting line style
-          marker="o",                  # setting marker (circle) to unions
+          marker="o",                # setting marker (circle) to unions
           markersize=15,             # setting size of marker
           markerfacecolor="green",   # setting inner color of marker
           markeredgecolor="blue",    # setting edge color of marker
